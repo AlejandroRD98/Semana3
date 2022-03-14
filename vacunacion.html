@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunation</title>
+    <script src="https://kit.fontawesome.com/88c926c6ff.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    
+</head>
+<style>
+*{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.header {
+    height: 75px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255,0.9);
+}
+
+.nav-links{
+    padding: 10px 0px;
+}
+
+.nav-links li{
+    color: #6d7b93;
+    display: inline-block;
+    margin: 15px 25px;
+    
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color:#85a8d1;
+    padding: 15px 0px;
+}
+
+.btn{
+    background-color: rgba(44,76,202,255);
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 24px
+
+}
+
+.btn2{
+    background-color: #85a8d1;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+
+}
+
+
+.col-izq{
+    float: left;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 50px 0px ;
+}
+
+.col-der{
+    float: right;
+    width: 50%;
+    height: auto;
+    padding: 0px 0px;
+}
+.empresas{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 30%;
+    padding: 0px 100px;
+    
+    
+}
+
+.empresas img{
+    width: 259px;
+    height: 200px;
+    padding: 25px 30px ;
+    padding-left: 9%;
+    color: #fff;
+
+
+}
+.information{
+    position: relative;
+    display: inline-flex;
+    margin: 1cm;
+
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px 30px;
+  height: 150pxs; 
+  box-sizing: border-box;
+  margin: 45px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 5px
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  border: #85a8d1;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1080px) {
+  .column {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 5px
+  }
+}
+
+.col-izq2{
+    float: left;
+    width:  35%;
+    height: 500px;
+    text-align: center;
+}
+
+.col-der2{
+    float: right;
+    width: 60%;
+    height: 500px;
+    padding: 0px 0px;
+}
+
+.col-izq3{
+    float: left;
+    width: 50%;
+    height: 70%;
+    padding: 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  border: #85a8d1;
+}
+
+.barra_inf{
+    background-color: #85a8d1;
+    position:relative;
+    height:300px ;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container1{
+  margin: 10px 41px;
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 185px 185px;
+  grid-auto-rows: 150px;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  margin-left: 25%;
+}
+  .box{
+    padding:10px;
+    border-radius:10px;
+    border-style: groove;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 5px;
+
+  }
+  .footer-container {
+        margin: none;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: rgb(238,243,249);
+        display: grid;
+        grid-template-columns: 50%  16.6% 16.6% 16.6%;
+    
+}
+
+.footer-container li{
+    list-style:none;
+    font-family: rubik;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.column2 {
+    margin: 0px;
+    padding: 0px
+}
+
+.flotante{
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    margin: 600px 25%;
+    background-color: white;    
+}
+
+details{
+    padding:25px 0px;
+    margin: 1px ;
+   
+}
+
+summary{
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 5px;
+    width: 50%;
+    margin: 0px;
+    padding: 8px;
+    background-color:rgb(238,243,249) ;
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight:500;
+}
+
+#Tit_azul{
+    color:#2d4dca
+}
+#Tit_sec1{
+    color: #1f3e72;
+    font-family: Shippori Antique B1;
+    font-size: 48px;
+    padding-left: 25%;
+    padding-right: 30%;
+
+}
+
+#Tit_sec2{
+    color: #1f3e72;
+    font-family: Shippori Antique B1;
+    font-size: 48px;
+    padding: 0px 60px;
+    padding-left: 0%;
+}
+
+#Tit_sec4{
+    color: #1f3e72;
+    font-family: Shippori Antique B1;
+    font-size: 48px;
+    text-align: right;
+}
+
+#Tit_sec2{
+    color: #1f3e72;
+    font-family: sans-serif;
+    font-size: 48px;
+    
+}
+
+p#sec1{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+p#sec2{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 20px;
+    padding-right:60%;
+    text-align: left;
+}
+
+p#sec3{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p#sec4{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 18px;
+    text-align: right;
+    padding-left: 60%;
+}
+
+#text_barra{
+    display: inline;
+    font-family: Rubik;
+    font-size: 15px;
+}
+
+.col-der2 p{
+    font-family: Rubik;
+    font-size: 14px;
+
+}
+
+.cointaner3{
+    display: grid;
+    grid-template-columns: 25%;
+    padding: 0px;
+}
+
+.column_flot {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  height: 100px; 
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middlessss;
+}
+
+.iconos_sec1{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 25%;
+
+}
+
+.schedule{
+    display: inline-flex;
+    justify-content: right;
+    padding-left: 15px;
+    padding-top: 100px;
+}
+
+.box_inter{
+    flex-wrap: wrap;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.box_inter p{
+    padding-top: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+.box_inter i{
+    color: #2d4dca;
+    padding: 10px;
+    background-color: rgb(238,243,249) ;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.box_inter h3{
+   font-size: medium;
+}
+
+#icons_sec2{
+    color: #2d4dca;
+    padding: 10px;
+    background-color: rgb(238,243,249) ;
+}
+</style>
+
+<body>
+    <div class="header">
+        <h2 id="Tit_azul">Vacunation</h2>
+        <ul class="nav-links">
+            <li><a href="">Database</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Regulation</a></li>
+            <li class="btn" style="color: #6e7c94;"><a href="" >Hoax Buster</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="col-izq">
+            <h1 id="Tit_sec1">Figth Virus with Vaccines</h1>
+            <p id="sec1">Let's stop this pandemic by killing the virus with a vaccine,
+            don´t let yourself and your family get infected. </p>
+            <div class="iconos_sec1">
+                <i class="fa-solid fa-shield" style="color: gold;"></i><p style="font-weight: bold;" padding-left="30px">Best protection</p>
+                <i class="fa-solid fa-star" style="color: gold;"></i><p style="font-weight: bold;">Selected vaccines</p>
+            </div>
+            <div class="schedule" >
+                <i class="fa-solid fa-clock" style="color:#3353d1"></i><p style="font-weight: bold">Schedule your vaccination</p>
+                
+            </div>
+        </div>
+
+        <div class="flotante">
+            <div class="row" vertical-align="middle">           
+                <div class="column_flot">
+                    <h4>Location</h4>
+                    <P>Jakarta Utara</P>
+                </div>
+                <div class="column_flot">
+                    <h4>date</h4>
+                    <P>Jakarta Utara</P>
+                </div>
+                <div class="column_flot">
+                    <h4>Vaccine type</h4>
+                    <P>AstraZeneca</P>
+                </div>
+                <div class="column_flot" style="padding-top: 40px;">
+                    <a href="" class="btn" ; >Submit</a>
+                </div>
+            
+            </div> 
+            
+        </div>
+
+        <div class="col-der">
+            <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/nurse.png?raw=true" alt="enfermera" width="100%" height=700px>
+        </div>
+    </section>
+
+    <div class="empresas">
+        <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/AstraZeneca.png?raw=true" alt="AstraZeneca" style="color: #fff;">
+        <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/sinovac1336.png?raw=true" alt="Sinovac">
+        <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/Pfizer.png?raw=true" alt="Pfizer">
+        <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/moderna.png.png?raw=true" alt="Moderna">
+    </div> 
+    <div>
+        <h1 id="Tit_sec2">Why sould I vaccinated?</h1>
+        <p id="sec2">In order to avoid any doubts about getting the COVID-19 vaccine, identify
+        the following 4 benefits of COVID-19 vaccination :</p>
+        <div class="row">
+            <div class="column" >
+                <i  id ="icons_sec2" class="fa-solid fa-bars"></i>
+              <h2 id="Tit_sec3">Minimize the spreed of the virus</h2>
+              <p id="sec3">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+            </div>
+            <div class="column" >
+            <i  id ="icons_sec2" class="fa-solid fa-shield-blank"></i>    
+              <h2 id="Tit_sec3">Forming antibodies</h2>
+              <p id="sec3">COVID-19 vaccine proven to help shape antibody response from inmune system</p>
+            </div>
+            <div class="column" >
+                <i  id ="icons_sec2" class="fa-solid fa-user-group"></i>
+              <h2 id="Tit_sec3">Protecting people nearby</h2>
+              <p id="sec3" >The benefits of COVID-19 vaccination are the vaccine that we get also help protect people around us</p>
+            </div>
+            <div class="column">
+                <i id ="icons_sec2"class="fa-solid fa-chart-line"></i>
+              <h2 id="Tit_sec3">Creating gruop immunity</h2>
+              <p  id="sec3" >COVID-19 vaccination is also beneficial for creating gruop inmunity of heard inminuty  </p>
+            </div>
+          </div>
+        </div>
+
+    <section>
+        <h1 id="Tit_sec4" style="align-items:right;">Preparation Before Vaccine</h1>
+        <p id="sec4"> The sucess of vaccines is strongly influenced by the stregth of the body's inmune
+            system. Therefore, there are several thighs that can be tried to make the COVID-19 vaccine work:
+        </p>
+        <div class="col-izq2">
+            <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/preparation.png?raw=true" alt="enfermera" width="100%" height="500px">
+        </div>
+        <div class="col-der2">
+            <details>
+                <summary>Avoid alcoholic situations</summary>
+                <p>Stress has a profund effect on inmune work.
+                    Morever, prolonged stress can increase cortisol production, and oxiative stress in the body.</p>
+            </details>
+
+            <details>
+                <summary>Avoid stress</summary>
+                    <p>Stress has a profund effect on inmune work.
+                    Morever, prolonged stress can increase cortisol production, and oxiative stress in the body.</p>
+            </details>
+            <details>
+
+                <summary>Eat healty food</summary>
+                <p>Stress has a profund effect on inmune work.
+                    Morever, prolonged stress can increase cortisol production, and oxiative stress in the body.</p>
+            </details>
+            <details>
+                <summary>Get enough sleep</summary>
+                <p>Stress has a profund effect on inmune work.
+                    Morever, prolonged stress can increase cortisol production, and oxiative stress in the body.</p>
+            </details>
+            <details>
+                <summary>Exersice or physical activities</summary>
+                <p>Stress has a profund effect on inmune work.
+                    Morever, prolonged stress can increase cortisol production, and oxiative stress in the body.</p>
+            </details>
+
+        </div>
+    </section>
+
+        <div>
+            <section>
+                <h1 id="Tit_sec2">Emergency contact</h1>
+                <p id="sec2"> Contact one of the contacs below if you or your family feel unwell and have similar symptoms
+                    such as COVID-19, make sure you alsi take care of yourself before reporting to us:
+                </p>
+                <div class="col-izq">
+                    <div class="container1">
+                        <div class="box">
+                            <div class="box_inter">
+                                <i class="fa-solid fa-phone"></i> 
+                                <h3>Call</h3>  
+                                <p style="font-size: 10px">021.123.145.14</p >
+                            </div>
+                            <p class="btn2">Call now</p>
+                        </div>
+                        <div class="box"> 
+                            <div class="box_inter">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <h3>Chat</h3>  
+                                <p style="font-size: 10px">021.123.145.14</p >
+                            </div>
+                            <p class="btn">Chat now</p>
+                        </div>
+                        <div class="box"> 
+                            <div class="box_inter">
+                                <i class="fa-solid fa-video"></i>
+                                <h3>Video Call</h3>  
+                                <p style="font-size: 10px">021.123.145.14</p > 
+                            </div>
+                            <p class="btn2">Video Call now</p>
+                        </div>
+                        <div class="box"> 
+                            <div class="box_inter">
+                                <i class="fa-solid fa-message"></i>
+                                <h3>Message</h3>   
+                                <p style="font-size: 10px;">021.123.145.14</p >
+                            </div>
+                            <p class="btn2">Message Now</p>
+                        </div>
+                    </div>
+               </div>
+                <div class="col-der">
+                    <img src="https://github.com/AlejandroRD98/Semana3/blob/main/imagenes/doctor.png?raw=true" alt="doctor" width="100%" height="500px">
+                </div>
+            </section>
+        </div>
+
+    <footer class="cointaner2">
+            <div class="row footer-container">
+                <div class="column2" style="width: 150px;">
+                    <h2 id="Tit_azul">Vaccination</h2>
+                    <p id="text_barra">Our goal is to help the world free from ongoing pandemix</p>
+                </div>
+                <div class="column2">
+                    <h2>About</h2>
+                    <ul>
+                        <li>Aboout us</li>
+                        <li>Features</li>
+                        <li>News & Blog</li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>How we work</li>
+                        <li>Capital</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>FAQs</li>
+                        <li>Support Center</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+
+
+</body>
